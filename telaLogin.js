@@ -46,9 +46,8 @@ function TelaLogin({navigation}) {
                     <Text style={styles.txt}>ENTRAR</Text>
                 </View>
             </Pressable>
-
             <Pressable>
-                <Text style={styles.receberSenha}>recuperar senha</Text>
+                <Text style={styles.recuperarSenha}>recuperar senha</Text>
             </Pressable>
         </View>
       </View>
@@ -87,10 +86,9 @@ const styles = StyleSheet.create({
         fontSize: 16
     },
     form: {
-        flex: 2,
+        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#ffff00'
     },
     receberTxt: {
         width: 246,
