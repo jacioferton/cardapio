@@ -7,9 +7,9 @@ function TelaLogin({navigation}) {
 
     return (
       <View style={styles.fundo}>
-        <View style={styles.barraSuperpeior}>
+        <View style={styles.barraSuperior}>
             <View style={styles.cardapio}>
-                <Pressable>
+                <Pressable onPress={ () => navigation.navigate('Cardapio')}>
                     <Text style={styles.txt}>Cardápio</Text>
                 </Pressable>
             </View>
@@ -19,7 +19,9 @@ function TelaLogin({navigation}) {
             </View>
 
             <View style={styles.cadastrar}>
-                <Text style={styles.txt}>Cadastrar</Text>
+                <Pressable onPress={ () => navigation.navigate('Cadastro')}>
+                    <Text style={styles.txt}>Cadastrar</Text>
+                </Pressable>
             </View>
         </View>
 
@@ -59,7 +61,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#E1E1E1',
     },
-    barraSuperpeior: {
+    barraSuperior: {
         flexDirection: 'row',
         width: '100%',
         height: 50,
@@ -93,9 +95,8 @@ const styles = StyleSheet.create({
     receberTxt: {
         width: 246,
         height: 50,
-        outlineStyle: 'none',
         color: '#000000',
-        backgroundColor: '#C1C1C1',
+        backgroundColor: '#D8D8D8',
         borderWidth: 1,
         borderRadius: 8,
         padding: 8,
@@ -104,7 +105,7 @@ const styles = StyleSheet.create({
     viewSenha: {
         width: 246,
         height: 50,
-        backgroundColor: '#c1c1c1',
+        backgroundColor: '#D8D8D8',
         borderWidth: 1,
         borderRadius: 8,
         padding: 8,
