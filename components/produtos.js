@@ -5,7 +5,7 @@ const DATA = [
         id: 0,
         nome: 'Batata Sensações',
         preco: 5.00,
-        foto: '../assets/p0.png',
+        foto: 'https://raw.githubusercontent.com/jacioferton/cardapio/master/assets/p0.png',
         categoria: 'lanche',
         descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     },
@@ -13,7 +13,7 @@ const DATA = [
         id: 1,
         nome: 'Biscoito Treloso',
         preco: 3.00,
-        foto: '../assets',
+        foto: '../assets/p0.png',
         categoria: 'lanche',
         descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     },
@@ -193,6 +193,6 @@ const DATA = [
         categoria: 'marmita',
         descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     },
-]
+];
 
 export default DATA

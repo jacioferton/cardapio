@@ -1,5 +1,6 @@
 import { Text, View, Pressable, StyleSheet, FlatList, SafeAreaView, Image } from 'react-native';
 import DATA from './produtos.js';
+import { List, Avatar } from 'react-native-paper';
 
 function TelaCardapio({navigation}) {
     return (
@@ -38,16 +39,20 @@ function TelaCardapio({navigation}) {
 };
 
 const Item = ({nome, preco, foto, descricao}) => (
-    <View style={styles.card}>
-        <Image
-            style={styles.foto}
-        />
-        <View>
-            <Text style={styles.titulo}>{nome}</Text>
-            <Text style={styles.preco}>R$: {preco.toFixed(2)}</Text>
-            <Text style={styles.descricao}>{descricao}</Text>
-        </View>
-    </View>
+    <List.Item 
+        style={styles.cardList}
+        titleStyle={styles.titulo}
+        descriptionStyle={styles.descricao}
+        title={nome+' - R$:'+preco.toFixed(2)}
+        description={descricao}
+        descriptionNumberOfLines={4}
+
+        left={()=><Avatar.Image
+                source={{uri: foto}}
+                style={styles.foto}
+            />
+        }
+    />
 );
 
 const styles = StyleSheet.create({
@@ -89,23 +94,17 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         padding: 10,
     },
-    foto: {
-        height: 100,
-        width: 100,
-        backgroundColor: '#D1D1D1',
-    },
     titulo: {
         fontWeight: 900,
         fontSize: 24,
-        marginLeft: 10,
-    },
-    preco: {
-        marginLeft: 10,
     },
     descricao: {
-        marginLeft: 10,
-        marginEnd: 20,
-    }
+        marginRight: 10,
+        fontSize: 12,
+    },
+    cardList: {
+        paddingHorizontal: 10,
+    },
 });
 
 export default TelaCardapio;
