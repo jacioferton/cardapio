@@ -43,7 +43,7 @@ const Item = ({nome, preco, foto, descricao}) => (
         style={styles.cardList}
         titleStyle={styles.titulo}
         descriptionStyle={styles.descricao}
-        title={nome+' - R$:'+preco.toFixed(2)}
+        title={nome+' - R$ '+preco.toFixed(2)}
         description={descricao}
         descriptionNumberOfLines={4}
 
