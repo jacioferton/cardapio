@@ -57,8 +57,8 @@ const Item = ({nome, preco, foto, descricao}) => (
 
 const styles = StyleSheet.create({
     fundo: {
-        flex: 1,
         backgroundColor: '#FFFFFF',
+        paddingBottom: 25,
     },
     barraSuperior: {
         flexDirection: 'row',
