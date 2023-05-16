@@ -181,7 +181,7 @@ const DATA = [
         id: 22,
         nome: 'Marmita(P)',
         preco: 15.00,
-        foto: 'https://raw.githubusercontent.com/jacioferton/cardapio/master/assets/p022.png',
+        foto: 'https://raw.githubusercontent.com/jacioferton/cardapio/master/assets/p22.png',
         categoria: 'marmita',
         descricao: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'
     },
